@@ -11,14 +11,37 @@ const userWord = prompt("Inserisci una parola");
 // palindromeword(userWord)
 // console.log(palindromeword)
 
-let parolaInvertita = "";
+// let parolaInvertita = "";
 
-function palidnrome (wordPalindrome){
+// function palidnrome (){
+//     return palidnromeWord
+// }
+
+let parolaInvertita = "";
+let palidnromeWord = false
+
+for( i = userWord.length - 1; i >= 0; i--){
+    parolaInvertita += userWord[i];
+}
+if(userWord == parolaInvertita){
+    palidnromeWord = true
+}
+
+
+function isPalindrome (){
+    let parolaInvertita = "";
+    let palidnromeWord = false
+
     for( i = userWord.length - 1; i >= 0; i--){
         parolaInvertita += userWord[i];
     }
-    
     if(userWord == parolaInvertita){
-        console.log("Parola palindroma")
-    }return
+        palidnromeWord = true
+    }
+
+    return palidnromeWord
 }
+
+isPalindrome(luca)
+
+
